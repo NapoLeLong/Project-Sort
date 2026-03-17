@@ -35,11 +35,6 @@ void ShakerSort(int a[], int n)
     }
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::milliseconds duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-    std::cout << "Running Time (if required): " << duration << " ms\n";
-    std::cout << "Comparisions (if required): " << compare << '\n';
-}
-
-int main()
-{
-	return 0;
+    if (flag & 1) std::cout << "Running time (if required): " << duration.count() << " ms\n";
+    if (flag & 2) std::cout << "Comparisions (if required): " << compare << "\n";
 }

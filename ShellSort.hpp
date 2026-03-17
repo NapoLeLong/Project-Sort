@@ -28,16 +28,6 @@ void shellSort(int a[], int n){
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
 
-    std::cout << "Running time (if required): " << duration.count() << " ms\n";
-    std::cout << "Comparisions (if required): " << compare << '\n';
-}
-
-int main()
-{
-    int arr[] = {45, 23, 53, 11, 62, 34, 18, 99, 15};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    shellSort(arr, n);
-
-    return 0;
+    if (flag & 1) std::cout << "Running time (if required): " << duration.count() << " ms\n";
+    if (flag & 2) std::cout << "Comparisions (if required): " << compare << "\n";
 }
