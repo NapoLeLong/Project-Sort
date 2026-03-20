@@ -8,6 +8,7 @@ int partitionFirstPivot(int arr[], int low, int high, long long& comp) {
 
     for (int j = low + 1; j <= high; j++) {
         comp++;
+        comp++;
         if (arr[j] < pivot) {
             std::swap(arr[i], arr[j]);
             i++;
@@ -19,6 +20,7 @@ int partitionFirstPivot(int arr[], int low, int high, long long& comp) {
 }
 
 void quickSortRec(int arr[], int low, int high, long long& comp) {
+    comp++;
     if (low < high) {
         int pi = partitionFirstPivot(arr, low, high, comp);
 
@@ -27,7 +29,7 @@ void quickSortRec(int arr[], int low, int high, long long& comp) {
     }
 }
 
-std::pair<int, double> quickSort(int arr[], int n) {
+std::pair<long long, double> quickSort(int arr[], int n) {
     long long comp = 0;
     auto start = std::chrono::high_resolution_clock::now();
     if (n > 1) {

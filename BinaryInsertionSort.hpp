@@ -24,7 +24,7 @@ int binarySearch(int a[], int item, int low, int high, int& compare)
     return binarySearch(a, item, low, mid - 1, compare);
 }
 
-pair<int, double> binaryInsertionSort(int a[], int n)
+std::pair<long long, double> binaryInsertionSort(int a[], int n)
 {
     auto start = chrono::high_resolution_clock::now();
     int i, locate, j, selected;

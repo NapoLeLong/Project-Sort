@@ -2,7 +2,7 @@
 #include <chrono>
 #include <vector>
 
-pair<int, double> ShakerSort(int a[], int n)
+std::pair<long long, double> ShakerSort(int a[], int n)
 {
     int compare = 0;
     auto start = std::chrono::high_resolution_clock::now();

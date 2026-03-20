@@ -2,7 +2,7 @@
 #include <chrono>
 #include <vector>
 
-pair<int, double> BubbleSort(int a[], int n)
+std::pair<long long, double> BubbleSort(int a[], int n)
 {
     int compare = 0;
 

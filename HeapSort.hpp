@@ -51,7 +51,7 @@ void heapSort(std::vector<int> &a, unsigned long long &compCount)
     }
 }
 
-pair<int, double> runHeapSort(std::vector<int> data)
+std::pair<long long, double> runHeapSort(std::vector<int> data)
 {
     unsigned long long comparisons = 0;
 

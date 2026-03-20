@@ -2,7 +2,7 @@
 #include <chrono>
 #include <vector>
 
-pair<int, double> InsertionSort(int a[], int n)
+std::pair<long long, double> InsertionSort(int a[], int n)
 {
     int compare = 0;
 

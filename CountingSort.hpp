@@ -3,7 +3,7 @@
 #include <vector> 
 using namespace std;
 
-pair<int, double> countingSort(int a[], int n){
+std::pair<long long, double> countingSort(int a[], int n){
     auto start = chrono::high_resolution_clock::now();
     int compare = 0;
 

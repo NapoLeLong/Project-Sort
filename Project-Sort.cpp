@@ -59,7 +59,7 @@ int main(int argc, char** argv)
     auto runAlgorithm = [&](string algo, vector<int>& a, double& time, long long& comp) {
         int n = a.size();
 
-        pair<int, double> res;
+        std::pair<long long, double> res;
 
         if (algo == "selection-sort") res = runSelectionSort(a);
         else if (algo == "insertion-sort") res = InsertionSort(a.data(), n);

@@ -90,7 +90,7 @@ void flashSort(std::vector<int> &a, unsigned long long &compCount)
     }
 }
 
-pair<int, double> runFlashSort(std::vector<int> data)
+std::pair<long long, double> runFlashSort(std::vector<int> data)
 {
     unsigned long long comparisons = 0;
 
