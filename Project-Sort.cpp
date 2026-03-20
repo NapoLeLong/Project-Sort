@@ -15,9 +15,9 @@
 #include "ShellSort.hpp"
 #include "HeapSort.hpp"
 #include "MergeSort.hpp"
-//#include "QuickSort.hpp"
+#include "QuickSort.hpp"
 #include "CountingSort.hpp"
-//#include "RadixSort.hpp"
+#include "RadixSort.hpp"
 #include "FlashSort.hpp"
 
 using namespace std;
@@ -69,9 +69,9 @@ int main(int argc, char** argv)
         else if (algo == "shell-sort") res = shellSort(a.data(), n);
         else if (algo == "heap-sort") res = runHeapSort(a);
         else if (algo == "merge-sort") res = mergeSort(a.data(), n);
-        else if (algo == "quick-sort") /* replace with your quick sort call */;
+        else if (algo == "quick-sort") res = quickSort(a.data(), n);
         else if (algo == "counting-sort") res = countingSort(a.data(), n);
-        else if (algo == "radix-sort") /* replace with your radix sort call */;
+        else if (algo == "radix-sort") res = radixSort(a.data(), n);
         else if (algo == "flash-sort") res = runFlashSort(a);
 
         comp = res.first;
